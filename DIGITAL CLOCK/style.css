@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  background-color: #1e262c;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 8px #00fff7;
+}
+
+.clock {
+  display: flex;
+  gap: 40px;
+}
+
+.dial {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #2f3a40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  transform-origin: center center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.circle {
+  text-align: center;
+  color: white;
+}
+
+.hours {
+  border: 6px solid #ff2e74;
+}
+
+.hours .value {
+  font-size: 48px;
+  color: #ff2e74;
+}
+
+.minutes {
+  border: 6px solid #ffcd00;
+}
+
+.minutes .value {
+  font-size: 48px;
+  color: #ffcd00;
+}
+
+.seconds {
+  border: 6px solid #00ff80;
+}
+
+.seconds .value {
+  font-size: 48px;
+  color: #00ff80;
+}
+
+.label {
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: block;
+  margin-top: 4px;
+}
+
+.ampm {
+  position: absolute;
+  top: 30%;
+  right: 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
